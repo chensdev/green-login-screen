@@ -1,0 +1,55 @@
+.loginForm {
+	min-width: 500px;
+	margin: auto;
+	padding: 50px;
+	background: white;
+	box-shadow: 0px 0px 7px -3px lightgray;
+	label {
+		display: flex;
+		flex-direction: column;
+	}
+	button {
+		display: block;
+	}
+	.info {
+		padding-bottom: 50px;
+		h1 {
+			font-family: "GothamMedium";
+			color: rgb(74, 74, 74);
+			font-size: 28px;
+		}
+		p {
+			font-family: "GothamThin";
+			font-size: 16px;
+		}
+	}
+	.email-input {
+		padding-bottom: 20px;
+		p {
+			margin-bottom: 10px;
+			font-family: "GothamLight";
+		}
+	}
+	#email {
+		font-size: 16px;
+		padding: 8px 5px;
+		border: 1px solid lightgrey;
+		border-radius: 5px;
+	}
+	#remember {
+		flex-direction: row;
+		p {
+			font-family: "GothamLight";
+			font-weight: 700;
+			font-size: 12px;
+			position: relative;
+			top: 3px;
+		}
+		input {
+			margin-right: 10px;
+		}
+	}
+	.btn {
+		margin-top: 60px;
+	}
+}

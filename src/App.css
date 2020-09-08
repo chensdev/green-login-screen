@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  padding: 10px 30px;
+  background-color: white;
+  border: 0.5px solid lightgrey;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "GothamLight";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn p {
+  position: relative;
+  top: 4px;
+}
+
+.btn:hover {
+  background: #2eaf5f;
+  cursor: pointer;
+  transition: 0.3s;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.loginForm {
+  min-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: white;
+  box-shadow: 0px 0px 7px -3px lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.loginForm label {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm button {
+  display: block;
+}
+
+.loginForm .info {
+  padding-bottom: 50px;
+}
+
+.loginForm .info h1 {
+  font-family: "GothamMedium";
+  color: #4a4a4a;
+  font-size: 28px;
+}
+
+.loginForm .info p {
+  font-family: "GothamThin";
+  font-size: 16px;
+}
+
+.loginForm .email-input {
+  padding-bottom: 20px;
+}
+
+.loginForm .email-input p {
+  margin-bottom: 10px;
+  font-family: "GothamLight";
+}
+
+.loginForm #email {
+  font-size: 16px;
+  padding: 8px 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.loginForm #remember {
+  flex-direction: row;
+}
+
+.loginForm #remember p {
+  font-family: "GothamLight";
+  font-weight: 700;
+  font-size: 12px;
+  position: relative;
+  top: 3px;
+}
+
+.loginForm #remember input {
+  margin-right: 10px;
+}
+
+.loginForm .btn {
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
   }
 }
+
+@media (max-width: 520px) {
+  .loginForm {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+  .loginForm .info {
+    padding-bottom: 40px;
+  }
+  .loginForm .info h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 370px) {
+  button {
+    margin-top: 0;
+    margin: 60px auto;
+  }
+  .loginForm .info {
+    text-align: center;
+  }
+  .loginForm .info h1 {
+    font-size: 18px;
+  }
+  .loginForm .info p {
+    font-size: 16px;
+  }
+  .email-input p {
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+  .container {
+    margin: 20px auto;
+  }
+  .container button {
+    margin: 5px auto;
+  }
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+}
+
+.logo {
+  width: 150px;
+  padding-bottom: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */

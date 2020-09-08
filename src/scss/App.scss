@@ -1,0 +1,21 @@
+@import "resets";
+@import "btn";
+@import "variables";
+@import "loginForm";
+@import "mediaQueries";
+
+.App {
+	height: 100vh;
+	display: flex;
+}
+
+.logo {
+	width: 150px;
+	padding-bottom: 40px;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	text-align: center;
+}
