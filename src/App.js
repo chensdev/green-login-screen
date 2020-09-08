@@ -10,7 +10,7 @@ export class App extends Component {
 			<div className="App">
 				<Router>
 					<Switch>
-						<Route path="/login" exact component={LoginForm}></Route>
+						<Route path="/" exact component={LoginForm}></Route>
 						<Route path="/dashboard" exact component={Dashboard}></Route>
 					</Switch>
 				</Router>
