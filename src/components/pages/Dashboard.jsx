@@ -10,7 +10,7 @@ export class Dashboard extends Component {
 	}
 
 	handleLogout(e) {
-		this.props.history.push("/login");
+		this.props.history.push("/");
 	}
 
 	render() {
